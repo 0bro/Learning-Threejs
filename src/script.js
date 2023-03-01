@@ -9,7 +9,7 @@ const textureLoader = new THREE.TextureLoader();
 const normalTexture = textureLoader.load("/textures/WavyScales.jpg");
 
 // Debug
-const gui = new dat.GUI();
+// const gui = new dat.GUI();
 
 // Canvas
 const canvas = document.querySelector("canvas.webgl");
@@ -57,7 +57,7 @@ scene.add(pointLight2);
 // light1.add(pointLight2.position, "z").min(-10).max(10).step(0.01);
 // light1.add(pointLight2, "intensity").min(-10).max(10).step(0.01);
 
-const pointLightHelper = new THREE.PointLightHelper(pointLight2, 1);
+// const pointLightHelper = new THREE.PointLightHelper(pointLight2, 1);
 
 const light1Color = {
   color: 0xff0000,
@@ -67,7 +67,7 @@ const light1Color = {
 //   pointLight2.color.set(color);
 // });
 
-scene.add(pointLightHelper);
+// scene.add(pointLightHelper);
 
 // const light2 = gui.addFolder("Light 2");
 
@@ -92,9 +92,9 @@ const light2Color = {
 //   pointLight3.color.set(color);
 // });
 
-const pointLightHelper2 = new THREE.PointLightHelper(pointLight3, 1);
+// const pointLightHelper2 = new THREE.PointLightHelper(pointLight3, 1);
 
-scene.add(pointLightHelper2);
+// scene.add(pointLightHelper2);
 
 /**
  * Sizes
